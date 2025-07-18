@@ -22,9 +22,9 @@ import netlifyLogo from "./assets/tech_logo/netlify.png";
 import vercelLogo from "./assets/tech_logo/vercel.png";
 
 // Work Section Logo's
-import TraitSmith from "./assets/work_logo/traitsmith.png";
-import MenuVista from "./assets/work_logo/menuvista.png";
-import GitLocator from "./assets/work_logo/gitlocator.png";
+import TraitSmith from "./assets/work_logo/TraitSmith.png";
+import MenuVista from "./assets/work_logo/MenuVista.png";
+import GitLocator from "./assets/work_logo/GitLocator.png";
 
 // Experience Section Logo's
 import cubicusLogo from "./assets/company_logo/cubicus.jpeg";
