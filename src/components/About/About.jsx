@@ -20,10 +20,14 @@ const About = () => {
             Amjad Imdad
           </h2>
           {/* Skills Heading with Typing Effect */}
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-[#8245ec] leading-tight">
-            <span className="text-white">I am a </span>
+          <h3 className="text-xl sm:text-2xl md:text-4xl font-semibold mb-4 text-[#8245ec] leading-tight">
             <ReactTypingEffect
-              text={["Fullstack Developer", "UI/UX Designer", "Coder"]}
+              text={[
+                "Full Stack Developer",
+                "UI/UX Specialist",
+                "MERN Stack Expert",
+                "Problem Solver",
+              ]}
               speed={100}
               eraseSpeed={50}
               typingDelay={500}
@@ -35,11 +39,12 @@ const About = () => {
           </h3>
           {/* About Me Paragraph */}
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
-            I am a Full Stack Developer with over 1.5+ years of experience in
-            building scalable web applications. Skilled in both front-end and
-            back-end development, I specialize in the MERN stack and other
-            modern technologies to create seamless user experiences and
-            efficient solutions.
+            With over 2+ years of hands-on experience in full-stack development,
+            I craft robust web applications using cutting-edge technologies. My
+            expertise spans the complete development lifecycle, from creating
+            intuitive UI/UX designs to implementing scalable backend
+            architectures. Passionate about writing clean, efficient code and
+            solving complex problems through technology.
           </p>
           {/* Resume Button */}
           <a

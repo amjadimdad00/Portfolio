@@ -67,8 +67,10 @@ const Work = () => {
 
       {/* Modal Container */}
       {selectedProject && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4">
-          <div className="bg-gray-900 rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl overflow-hidden relative">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 sm:p-4">
+          {/* Container - Only changes for lg+ */}
+          <div className="bg-gray-900 rounded-xl shadow-2xl w-[90%] max-w-lg lg:w-full lg:max-w-4xl overflow-hidden relative">
+            {/* Close Button (unchanged on all screens) */}
             <div className="flex justify-end p-4">
               <button
                 onClick={handleCloseModal}
@@ -78,21 +80,30 @@ const Work = () => {
               </button>
             </div>
 
-            <div className="flex flex-col">
-              <div className="w-full flex justify-center bg-gray-900 px-4">
+            {/* Content - Flex column by default, row only on lg+ */}
+            <div className="flex flex-col lg:flex-row">
+              {/* Image Section - Full width below lg, 50% on lg+ */}
+              <div className="w-full lg:w-1/2 flex justify-center bg-gray-900 px-4">
                 <img
                   src={selectedProject.image}
                   alt={selectedProject.title}
-                  className="lg:w-full w-[95%] object-contain rounded-xl shadow-2xl"
+                  className="w-[95%] lg:w-full object-contain rounded-xl shadow-2xl"
                 />
               </div>
-              <div className="lg:p-8 p-6">
-                <h3 className="lg:text-3xl font-bold text-white mb-4 text-md">
+
+              {/* Text Content - Full width below lg, 50% on lg+ */}
+              <div className="w-full lg:w-1/2 p-6 lg:p-8">
+                {/* Title (unchanged) */}
+                <h3 className="text-md lg:text-3xl font-bold text-white mb-4">
                   {selectedProject.title}
                 </h3>
-                <p className="text-gray-400 mb-6 lg:text-base text-xs">
+
+                {/* Description (unchanged) */}
+                <p className="text-gray-400 mb-6 text-xs lg:text-base">
                   {selectedProject.description}
                 </p>
+
+                {/* Tags (unchanged) */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   {selectedProject.tags.map((tag, index) => (
                     <span
@@ -103,12 +114,14 @@ const Work = () => {
                     </span>
                   ))}
                 </div>
+
+                {/* Buttons (unchanged layout) */}
                 <div className="flex justify-center gap-4">
                   <a
                     href={selectedProject.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-1/2 bg-gray-800 hover:bg-purple-800 text-gray-400 lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
+                    className="w-1/2 bg-gray-800 hover:bg-purple-800 text-gray-400 px-2 py-1 lg:px-6 lg:py-2 rounded-xl text-sm lg:text-xl font-semibold text-center"
                   >
                     View Code
                   </a>
@@ -117,7 +130,7 @@ const Work = () => {
                       href={selectedProject.webapp}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-1/2 bg-purple-600 hover:bg-purple-800 text-white lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
+                      className="w-1/2 bg-purple-600 hover:bg-purple-800 text-white px-2 py-1 lg:px-6 lg:py-2 rounded-xl text-sm lg:text-xl font-semibold text-center"
                     >
                       View Live
                     </a>
