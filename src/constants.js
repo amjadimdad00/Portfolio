@@ -21,10 +21,11 @@ import figmaLogo from "./assets/tech_logo/figma.png";
 import netlifyLogo from "./assets/tech_logo/netlify.png";
 import vercelLogo from "./assets/tech_logo/vercel.png";
 
-// Work Section Logo's
-import TraitSmith from "./assets/work_logo/TraitSmith.png";
-import MenuVista from "./assets/work_logo/MenuVista.png";
-import GitLocator from "./assets/work_logo/GitLocator.png";
+// Work Logo's
+import ConnectFour from "./assets/work_logo/connectfour.jpg";
+import CrushPlays from "./assets/work_logo/crushplays.png";
+import TraitSmith from "./assets/work_logo/traitsmith.png";
+import RepoSyncer from "./assets/work_logo/reposyncer.png";
 
 // Experience Section Logo's
 import cubicusLogo from "./assets/company_logo/cubicus.jpeg";
@@ -99,53 +100,48 @@ export const experiences = [
 export const projects = [
   {
     id: 0,
-    title: "TraitSmith",
+    title: "Connect Four Multiplayer",
     description:
-      "TraitSmith is a Node.js-based modular character generator. It takes individual trait layers like body parts, armor, weapons, facial features, etc., and composes them into full character images — ideal for games, NFTs, avatars, or any fantasy illustration needs.",
-    image: TraitSmith,
-    tags: [
-      "Node.js",
-      "NFT Generation",
-      "Image Processing",
-      "Jimp",
-      "Pinata SDK",
-      "Generative Art",
-    ],
-    github: "https://github.com/amjadimdad00/TraitSmith",
+      "🎮 Classic Connect Four with real-time multiplayer powered by Playroomkit. ✨ Features: Online multiplayer, smooth UI, TypeScript setup, lobby system.",
+    image: ConnectFour,
+    tags: ["Phaser 3", "Playroomkit", "React", "Vite", "TypeScript"],
+    github: "https://github.com/amjadimdad00/ConnectFourMP",
+    webapp: "https://connectfourmp.vercel.app/",
   },
   {
     id: 1,
-    title: "MenuVista",
+    title: "CrushPlays - Modern Music Streaming App",
     description:
-      "📋 MenuVista is a stylish menu design, customizable menu layout. The design is minimalist and modern, showcasing a central, colorful interface with gradient edges. It includes interactive elements ✨ and is built with a fully responsive layout 📱💻 to ensure a seamless experience across all devices.",
-    image: MenuVista,
+      "🎵 CrushPlays is a sleek and modern music streaming web app built with Next.js, TailwindCSS, and Radix UI. ✨ Features: JioSaavn API integration, real-time search, preloaded playback without login, responsive design.",
+    image: CrushPlays,
     tags: [
-      "HTML5",
-      "CSS3",
-      "Responsive Design",
-      "Modern UI",
-      "Minimalist Design",
-      "Interactive Elements",
+      "Next.js",
+      "TailwindCSS",
+      "Radix UI",
+      "Framer Motion",
+      "Embla Carousel",
+      "JioSaavn API",
+      "Sonner",
     ],
-    github: "https://github.com/amjadimdad00/MenuVista",
-    webapp: "https://MenuVista.vercel.app/",
+    github: "https://github.com/amjadimdad00/crushplays",
+    webapp: "https://crushplays.vercel.app/",
   },
   {
     id: 2,
-    title: "GitLocator",
+    title: "TraitSmith - NFT Generator with Node.js",
     description:
-      "A sleek, React.js-powered web application that lets users search for any GitHub profile and instantly view key details like bio, followers, repositories, and more. Perfect for developers looking to quickly explore GitHub profiles with a clean, responsive interface.",
-    image: GitLocator,
-    tags: [
-      "React JS",
-      "GitHub API",
-      "Axios",
-      "Responsive Design",
-      "Error Handling",
-      "Fetch API",
-      "User Search",
-    ],
-    github: "https://github.com/amjadimdad00/GitLocator",
-    webapp: "https://gitlocator.vercel.app/",
+      "⚔️ Generates random NFTs using Node.js with image processing and IPFS pinning. ✨ Features: Random NFT creation, image manipulation, IPFS pinning integration.",
+    image: TraitSmith,
+    tags: ["Node.js", "Jimp", "Pinata SDK", "dotenv"],
+    github: "https://github.com/amjadimdad00/TraitSmith",
+  },
+  {
+    id: 3,
+    title: "RepoSyncer - GitHub Automation",
+    description:
+      "🤖 Automates GitHub repo creation with templates. ✨ Features: Auto-readme generation, privacy toggle, description templates.",
+    image: RepoSyncer,
+    tags: ["Node.js", "GitHub REST API"],
+    github: "https://github.com/amjadimdad00/RepoSyncer",
   },
 ];

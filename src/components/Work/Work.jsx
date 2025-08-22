@@ -83,7 +83,7 @@ const Work = () => {
             {/* Content - Flex column by default, row only on lg+ */}
             <div className="flex flex-col lg:flex-row">
               {/* Image Section - Full width below lg, 50% on lg+ */}
-              <div className="w-full lg:w-1/2 flex justify-center bg-gray-900 px-4">
+              <div className="w-full lg:w-1/2 flex justify-center bg-gray-900 px-4 py-4">
                 <img
                   src={selectedProject.image}
                   alt={selectedProject.title}
@@ -116,7 +116,7 @@ const Work = () => {
                 </div>
 
                 {/* Buttons (unchanged layout) */}
-                <div className="flex justify-center gap-4">
+                <div className="flex justify-start gap-4">
                   <a
                     href={selectedProject.github}
                     target="_blank"
