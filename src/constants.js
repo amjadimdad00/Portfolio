@@ -24,7 +24,7 @@ import vercelLogo from "./assets/tech_logo/vercel.png";
 // Work Logo's
 import ConnectFour from "./assets/work_logo/connectfour.jpg";
 import CrushPlays from "./assets/work_logo/crushplays.png";
-import TraitSmith from "./assets/work_logo/traitsmith.png";
+import TraitSmith from "./assets/work_logo/traitsmiths.png";
 import RepoSyncer from "./assets/work_logo/reposyncer.png";
 
 // Experience Section Logo's
