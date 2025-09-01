@@ -26,6 +26,7 @@ import ConnectFour from "./assets/work_logo/connectfour.jpg";
 import CrushPlays from "./assets/work_logo/crushplays.png";
 import TraitSmith from "./assets/work_logo/traitsmiths.png";
 import RepoSyncer from "./assets/work_logo/reposyncer.png";
+import JARVIS from "./assets/work_logo/jarvis.png
 
 // Experience Section Logo's
 import cubicusLogo from "./assets/company_logo/cubicus.jpeg";
@@ -100,6 +101,15 @@ export const experiences = [
 export const projects = [
   {
     id: 0,
+    title: "J.A.R.V.I.S 🤖 - Personal AI Assistant",
+    description:
+      "🧠 Python-powered personal assistant that automates tasks, generates content, chats interactively, and includes early GitHub automation (testing phase). ✨ Features: Voice I/O, system automation, WhatsApp messaging, real-time search, image generation, 'Tired Mode' music, GitHub ops (testing).",
+    image: JARVIS,
+    tags: ["Python", "PyQt5", "Automation", "AI"],
+    github: "https://github.com/amjadimdad00/JARVIS",
+  },
+  {
+    id: 1,
     title: "Connect Four Multiplayer",
     description:
       "🎮 Classic Connect Four with real-time multiplayer powered by Playroomkit. ✨ Features: Online multiplayer, smooth UI, TypeScript setup, lobby system.",
@@ -109,7 +119,7 @@ export const projects = [
     webapp: "https://connectfourmp.vercel.app/",
   },
   {
-    id: 1,
+    id: 2,
     title: "CrushPlays - Modern Music Streaming App",
     description:
       "🎵 CrushPlays is a sleek and modern music streaming web app built with Next.js, TailwindCSS, and Radix UI. ✨ Features: JioSaavn API integration, real-time search, preloaded playback without login, responsive design.",
@@ -127,7 +137,7 @@ export const projects = [
     webapp: "https://crushplays.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "TraitSmith - NFT Generator with Node.js",
     description:
       "⚔️ Generates random NFTs using Node.js with image processing and IPFS pinning. ✨ Features: Random NFT creation, image manipulation, IPFS pinning integration.",
@@ -136,7 +146,7 @@ export const projects = [
     github: "https://github.com/amjadimdad00/TraitSmith",
   },
   {
-    id: 3,
+    id: 4,
     title: "RepoSyncer - GitHub Automation",
     description:
       "🤖 Automates GitHub repo creation with templates. ✨ Features: Auto-readme generation, privacy toggle, description templates.",
