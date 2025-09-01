@@ -26,7 +26,7 @@ import ConnectFour from "./assets/work_logo/connectfour.jpg";
 import CrushPlays from "./assets/work_logo/crushplays.png";
 import TraitSmith from "./assets/work_logo/traitsmiths.png";
 import RepoSyncer from "./assets/work_logo/reposyncer.png";
-import JARVIS from "./assets/work_logo/jarvis.png
+import JARVIS from "./assets/work_logo/jarvis.png";
 
 // Experience Section Logo's
 import cubicusLogo from "./assets/company_logo/cubicus.jpeg";
